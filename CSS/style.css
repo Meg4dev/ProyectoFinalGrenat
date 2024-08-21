@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-container {
+    width: 100%;
+    height: 835px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.hero-wallpaper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-wallpaper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 58%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+
+.hero-slider {
+    width: 99vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+
+.slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px*12);
+    gap: 15px;
+}
+
+.hero-slider .slide {
+    width: 200px;
+
+}
+
+.hero-slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-120px * 6));
+        transform: translateX(calc(-120px * 6));
+    }
+}
+
+.popular-models {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular-models h3 {
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.card-container {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.nuestrasMarcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-marcas {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 80%;
+}
+
+.marca {
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.marca:hover {
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.guitarrasElectricasContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guitarrasAcusticasContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bajosContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.amplificadoresContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accesoriosContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 15px;
+}
+
+
+
+.guitarrasElectricasGibsonContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guitarrasElectricasGibsonContainer img {
+    width: 200px;
+}
+
+.card-container-gibson {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+
+.guitarrasElectricasFenderContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guitarrasElectricasFenderContainer img {
+    width: 200px;
+}
+
+.card-container-fender {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+
+
+.guitarrasElectricasESPContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guitarrasElectricasESPContainer img {
+    width: 200px;
+}
+
+.card-container-esp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+
+
+.guitarrasElectricasSquierContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guitarrasElectricasSquierContainer img {
+    width: 200px;
+}
+
+.card-container-squier {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.guitarrasYamahaContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-yamaha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.bajosYamahaContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-yamaha-bajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.bajosIbanezContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-ibanez {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.bajosFenderContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-fender-bajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.amplificadoresContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-amps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.accesoriosContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container-accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.icono-carrito {
+    position: relative;
+    cursor: pointer;
+}
+
+/* .cart-count {
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color:rgba(255, 94, 0, 0.863);
+    color: white;
+    border-radius: 50%;
+    padding: 0.477rem;
+    line-height: 0.5;
+    width: 23px;
+    height: 23px;
+} */
+
+/* From Uiverse.io by cssbuttons-io */
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 170px;
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: rgba(255, 94, 0, 0.863);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: rgba(255, 94, 0, 0.863);
+}
+
+.button:hover:before {
+    top: -35%;
+    background-color: rgba(255, 94, 0, 0.863);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+    top: -45%;
+    background-color: rgba(255, 94, 0, 0.863);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+.carrito-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border: black;
+    border-radius: 10px;
+}
+
+
+.agregadosAlCarrito {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.buttonCarrito-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.boton-vaciar {
+    width: 170px;
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+}
+
+.boton-vaciar:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.boton-vaciar:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: rgba(255, 94, 0, 0.863);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.boton-vaciar:hover {
+    color: #ffffff;
+    background-color: rgba(255, 94, 0, 0.863);
+}
+
+.boton-vaciar:hover:before {
+    top: -35%;
+    background-color: rgba(255, 94, 0, 0.863);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.boton-vaciar:hover:after {
+    top: -45%;
+    background-color: rgba(255, 94, 0, 0.863);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.boton-comprar {
+    width: 170px;
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+
+}
+
+.boton-comprar:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.boton-comprar:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: rgba(255, 94, 0, 0.863);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.boton-comprar:hover {
+    color: #ffffff;
+    background-color: rgba(255, 94, 0, 0.863);
+}
+
+.boton-comprar:hover:before {
+    top: -35%;
+    background-color: rgba(255, 94, 0, 0.863);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.boton-comprar:hover:after {
+    top: -45%;
+    background-color: rgba(255, 94, 0, 0.863);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.icono-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+    transition: background-color 0.2s, transform 0.2s, opacity 0.2s;
+    /* Añadido transition para opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.icono-flotante.mostrar {
+    opacity: 1;
+}
+
+.icono-flotante:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.1);
+}
+
+.icono-imagen {
+    width: 40px;
+    height: auto;
+    display: block;
+}

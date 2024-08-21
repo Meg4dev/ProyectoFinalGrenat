@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Ecommerce guitarra</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fs-4" href="index.html"><img src="images/navbar-img.png" alt="zapatilla" width="105"
+            height="95"></a>
+
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4">
+            <ul class="navbar-nav nav-underline justify-content-center align-items-center fs-5 flex-grow-1 pe-3 p-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-2 guitarras-nav" style="color: white;" href="#">Guitarras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 bajos-nav" style="color: white;" href="#">Bajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 amplificadores-nav" style="color: white;" href="#">Amplificadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 accesorios-nav" style="color: white;" href="#">Accesorios</a>
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-center align-items-center flex-column flex-lg-row cart">
+              <a class="navbar-brand fs-6 icono-carrito"><img src="images/carrito.png" alt="carrito" width="35"
+                  height="35"></a>
+            </div>
+            <div>
+              <span class="badge rounded-pill text-light position-absolute translate-middle badge-cart"
+                style="background-color: rgba(255, 94, 0, 0.863);"></span>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+<!-- Bienvenido a mi proyecto. El html cuenta con una seccio hero que muestra un banner principal junto con contenedores en los cuales puse elementos dinamicos como cards y el carrito. -->
+
+    <section class="hero-container">
+      <div class="hero-wallpaper">
+        <img src="images/main-banner.jpg" alt="">
+      </div>
+      <div class="hero-text">
+        <h1>SANTA FE GUITARS</h1>
+        <p>El mejor sitio web de ventas de instrumentos musicales.</p>
+      </div>
+    </section>
+
+    <div id="carrito" class="carrito-container">
+      <h3 class="carrito-titulo">CARRITO</h3>
+      <div class="agregadosAlCarrito"></div>
+      <span class="totalAPagar"></span>
+      <div class="buttonCarrito-Container">
+        <button id="vaciar-carrito" class="boton-vaciar" style="display: none;">Vaciar carrito</button>
+        <button id="comprar" class="boton-comprar" style="display: none;">Procesar pedido</button>
+      </div>
+    </div>
+
+
+    <section class='guitarrasContainer'>
+
+      <div>
+        <h3>GUITARRAS</h3>
+      </div>
+
+      <section class="guitarrasElectricasGibsonContainer">
+        <img src="images/slider1.png" alt="">
+        <article class="card-container-gibson">
+        </article>
+        <article class="card-gibson-acust">
+        </article>
+      </section>
+
+
+
+      <section class="guitarrasElectricasFenderContainer">
+        <img src="images/slider2.jpeg" alt="">
+        <article class="card-container-fender">
+        </article>
+      </section>
+
+      <section class="guitarrasElectricasESPContainer">
+        <img src="images/slider5.png" alt="">
+        <article class="card-container-esp">
+        </article>
+      </section>
+
+      <section class="guitarrasElectricasSquierContainer">
+        <img src="images/slider6.jpeg" alt="">
+        <article class="card-container-squier">
+        </article>
+      </section>
+
+      <section class="guitarrasYamahaContainer">
+        <img src="images/slider3.jpeg" alt="">
+        <article class="card-container-yamaha">
+        </article>
+      </section>
+
+    </section>
+
+
+    <section class="bajosContainer">
+      <div>
+        <h3>BAJOS</h3>
+      </div>
+      <section class="bajosYamahaContainer">
+        <img src="images/slider3.jpeg" alt="">
+        <article class="card-container-yamaha-bajos">
+        </article>
+      </section>
+
+      <section class="bajosIbanezContainer">
+        <img src="images/slider4.png" alt="">
+        <article class="card-container-ibanez">
+        </article>
+      </section>
+
+      <section class="bajosFenderContainer">
+        <img src="images/slider2.jpeg" alt="">
+        <article class="card-container-fender-bajos">
+        </article>
+      </section>
+    </section>
+
+    <section class="amplificadoresContainer">
+      <div>
+        <h3>AMPLIFICADORES</h3>
+      </div>
+      <section class="amplificadoresContainer">
+        <article class="card-container-amps">
+        </article>
+      </section>
+    </section>
+
+
+    <section class="accesoriosContainer">
+      <div>
+        <h3>ACCESORIOS</h3>
+      </div>
+      <section class="accesoriosContainer">
+        <article class="card-container-accesorios">
+        </article>
+      </section>
+    </section>
+
+    <div class="hero-slider">
+      <div class="slide-track">
+
+        <div class="slide">
+          <img src="images/slider1.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider2.jpeg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider3.jpeg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider4.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider5.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider6.jpeg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider1.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider2.jpeg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider3.jpeg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider4.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider5.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="images/slider6.jpeg" alt="">
+        </div>
+
+
+      </div>
+    </div>
+
+    <a id="icono-carrito" class="icono-flotante" title="">
+      <img src="images/carrito-black.png" alt="carrito" width="35" height="35">
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/funcionalidades.js"></script>
+    <script src="js/DOMelements.js"></script>
+  </main>
+
+  <footer class="text-center text-white" style="background-color: #db6930">
+
+    <div class="container">
+
+      <section class="mt-5">
+
+        <div class="row text-center d-flex justify-content-center pt-5">
+
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+            </h6>
+          </div>
+      </section>
+
+      <hr class="my-5" />
+
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio earum repellat quaerat voluptatibus placeat nam,
+              commodi optio pariatur est quia magnam eum harum corrupti
+              dicta, aliquam sequi voluptate quas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="text-center mb-5">
+        <a href="" class="text-white me-4 text-decoration-none">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4 text-decoration-none">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4 text-decoration-none">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4 text-decoration-none">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4 text-decoration-none">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="" class="text-white me-4 text-decoration-none">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </section>
+
+    </div>
+
+
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      😎 Un saludo!
+    </div>
+
+  </footer>
+</body>
+
+</html>
