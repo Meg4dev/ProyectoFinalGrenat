@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //! Este archivo . js contiene las funcionalidades para traer elementos del DOM y generar contenido de forma dinamica. De aca salen las cards, los botones de comprar, el carrito, etc. Tambien se traen los arrays desde un archivo .json utilizando fetch.
+  //! Este archivo . js contiene las funcionalidades para traer elementos del DOM y generar contenido de forma dinamica. De aca salen las cards, los botones de comprar, el carrito, etc. Tambien se traen los arrays desde un archivo .json alojado en jsonbin utilizando fetch.
 
   const url = "https://api.jsonbin.io/v3/b/66c773c5e41b4d34e423d192";
   fetch(url)
