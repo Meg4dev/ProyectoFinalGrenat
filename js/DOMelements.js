@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   //! Este archivo . js contiene las funcionalidades para traer elementos del DOM y generar contenido de forma dinamica. De aca salen las cards, los botones de comprar, el carrito, etc. Tambien se traen los arrays desde un archivo .json utilizando fetch.
 
-  const url = "../productos.json";
+  const url = "https://api.jsonbin.io/v3/b/66c773c5e41b4d34e423d192";
   fetch(url)
     .then((response) => {
       if (!response.ok) {
@@ -10,16 +10,16 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((data) => {
-      const guitarrasElectricasGibson = data.guitarrasElectricasGibson;
-      const guitarrasElectricasFender = data.guitarrasElectricasFender;
-      const guitarrasElectricasESP = data.guitarrasElectricasESP;
-      const guitarrasElectricasSquier = data.guitarrasElectricasSquier;
-      const guitarrasAcusticasYamaha = data.guitarrasAcusticasYamaha;
-      const bajosYamaha = data.bajosYamaha;
-      const bajosIbanez = data.bajosIbanez;
-      const bajosFender = data.bajosFender;
-      const amplificadoresGuitarra = data.amplificadoresGuitarra;
-      const AccesoriosInstrumentos = data.AccesoriosInstrumentos;
+      const guitarrasElectricasGibson = data.record.guitarrasElectricasGibson;
+      const guitarrasElectricasFender = data.record.guitarrasElectricasFender;
+      const guitarrasElectricasESP = data.record.guitarrasElectricasESP;
+      const guitarrasElectricasSquier = data.record.guitarrasElectricasSquier;
+      const guitarrasAcusticasYamaha = data.record.guitarrasAcusticasYamaha;
+      const bajosYamaha = data.record.bajosYamaha;
+      const bajosIbanez = data.record.bajosIbanez;
+      const bajosFender = data.record.bajosFender;
+      const amplificadoresGuitarra = data.record.amplificadoresGuitarra;
+      const AccesoriosInstrumentos = data.record.AccesoriosInstrumentos;
 
       const mostrarGuitarrasElecGibson = document.querySelector(
         ".card-container-gibson"
